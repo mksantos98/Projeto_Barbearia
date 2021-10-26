@@ -1,0 +1,22 @@
+.row{
+  margin: 55px;
+}
+
+/*.tag {
+	font-size: 50pt;
+  color: chocolate;
+  font-weight: bold;
+	bottom: -39px;
+	text-shadow: 2px 2px #333;
+}*/
+
+.tag {
+	font-size: 80pt;
+    color: rgb(65, 64, 64);
+    font-weight: bold;
+    /*position: absolute;*/
+    /*left: -58px;*/
+	bottom: -39px;
+	text-shadow: 2px 2px rgb(3, 3, 3);
+  margin-left: 20px;
+}

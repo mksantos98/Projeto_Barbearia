@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="row box-contatos">
+    <div class="col-12">
+      <h3 class="text">Preencha o formulário abaixo para fazer contato.</h3>
+      <form class="mt-5" (ngSubmit)='contatos()' [formGroup]='formContatos'>
+        <div class="form-group col-md-6 mb-3">
+          <input type="text" class="form-control contatos" placeholder="Nome" formControlName='nome' required>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <input type="email" class="form-control contatos" placeholder="E-mail" formControlName='email' required>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <input type="tel" class="form-control contatos" placeholder="Telefone" (keypress)="mascara_tel(this)" maxlength="13" [(ngModel)]="telefone" formControlName='telefone' required>
+        </div>
+        <div class="form-group col-md-6 mb-3">
+          <input type="text" class="form-control contatos" placeholder="Endereço" formControlName='endereco' required>
+        </div>
+          <div class="col-md-6 mb-3">
+            <textarea class="form-control" placeholder="Digite sua Mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-contatos btn-success mt-5 mb-3" [disabled]="!formContatos.valid">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
