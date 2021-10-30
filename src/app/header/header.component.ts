@@ -12,16 +12,18 @@ import { Validators } from '@angular/forms';
 export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
-  
- 
+
+
 
  // constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
-    
+
   }
 
- 
-  
+
+  gotoCadastroClientes(){
+    this.router.navigate(['cadastro-clientes']);
+  }
 
 }

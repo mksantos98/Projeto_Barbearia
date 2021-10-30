@@ -25,28 +25,28 @@
 
 .tag {
 	font-size: 90pt;
-    color: chocolate;
+    color: rgb(65, 64, 64);
     font-weight: bold;
     position: absolute;
     left: -58px;
 	bottom: -39px;
-	text-shadow: 2px 2px #333;
+	text-shadow: 2px 2px rgb(3, 3, 3);
 }
 
 .bg_img{
-	right: 0; 
+	right: 0;
 	bottom: 0;
-	min-width: 100%; 
+	min-width: 100%;
 	min-height: 100%;
-	width: auto; 
-	height: auto; 
+	width: auto;
+	height: auto;
 	z-index: -1000;
-	
-	background-size: cover; 
+
+	background-size: cover;
 }
 .btn-home-cadastro-clientes {
     position: absolute !important;
-    top: 290px;
+    top: 400px;
     padding: 20px;
     font-size: 25px;
     width: 40%;

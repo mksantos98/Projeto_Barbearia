@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import * as Typed from 'typed.js';
 
 @Component({
   selector: 'app-planosvip',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanosvipComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    const options ={
+      stringsElement: '#typed-strings',
+      strings: ["<span style='color:rgb(65, 64, 64)'>Conheça Nossos Planos</span>", "<span style='color:rgb(65, 64, 64)'>Adquira Já o Seu!</span>"],
+      typedSpeed: 2000,
+      backSpeed: 2000,
+      backDelay: 2000,
+      smartBackspace: true,
+      fadeOut: true,
+      showCursor: false,
+      startDelay: 1000,
+      loop: true
+    };
+    const typed = new Typed('.typing-element', options);
   }
 
-}
+  }
+
